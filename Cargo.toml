@@ -44,13 +44,13 @@ frame-system-rpc-runtime-api = { path = "pallets/system/rpc/runtime-api", defaul
 frame-system-benchmarking = { path = "pallets/system/benchmarking", default-features = false }
 
 # helios deps
-ssz-rs = { package = "ssz_rs", version = "0.9.0", default-features = false }
-alloy-primitives = { version = "0.7.7", features = ["serde"], default-features = false }
-helios-common = { git = "https://github.com/a16z/helios.git", package = "common", rev = "a8c61f0cbb85e61329610463f11a09e2b835e2c5", default-features = false }
-helios-consensus-core = { git = "https://github.com/a16z/helios.git", package = "consensus-core", rev = "a8c61f0cbb85e61329610463f11a09e2b835e2c5", default-features = false }
-# TODO: replace with other alternative
-serde_cbor = { version = "0.11.2", default-features = false }
-tree_hash = { version = "0.7.0", default-features = false }
+# ssz-rs = { package = "ssz_rs", version = "0.9.0", default-features = false }
+# alloy-primitives = { version = "0.7.7", features = ["serde"], default-features = false }
+# helios-common = { git = "https://github.com/a16z/helios.git", package = "common", rev = "a8c61f0cbb85e61329610463f11a09e2b835e2c5", default-features = false }
+# helios-consensus-core = { git = "https://github.com/a16z/helios.git", package = "consensus-core", rev = "a8c61f0cbb85e61329610463f11a09e2b835e2c5", default-features = false }
+# # TODO: replace with other alternative
+# serde_cbor = { version = "0.11.2", default-features = false }
+# tree_hash = { version = "0.7.0", default-features = false }
 
 # benchmarking
 criterion = { version = "0.4", default-features = false }
@@ -256,7 +256,7 @@ sp-crypto-ec-utils = { git = "https://github.com/availproject/polkadot-sdk.git",
 # Other stuff
 # TODO: Move this to avail
 blst = { git = "https://github.com/ToufeeqP/blst", rev = "afdb0a4b7d98d4ff22c3a1d35faca223cde0ef3a" }
-ethereum_hashing = { git = "https://github.com/ncitron/ethereum_hashing", rev = "7ee70944ed4fabe301551da8c447e4f4ae5e6c35" }
+# ethereum_hashing = { git = "https://github.com/ncitron/ethereum_hashing", rev = "7ee70944ed4fabe301551da8c447e4f4ae5e6c35" }
 uint = { git = "https://github.com/paritytech/parity-common.git", tag = "uint-v0.9.5" }
 rlp = { git = "https://github.com/paritytech/parity-common.git", tag = "rlp-v0.5.2" }
 

@@ -20,7 +20,9 @@ sp-runtime = { workspace = true, default-features = false }
 sp-std = { workspace = true, default-features = false }
 sp-core = { workspace = true, default-features = false }
 frame-benchmarking = { workspace = true, default-features = false, optional = true }
-
+# sp1-sdk = { git = "https://github.com/succinctlabs/sp1", branch = "dev", default-features = false }
+sp1-verifier = { git = "https://github.com/succinctlabs/sp1", branch = "dev", default-features = false}
+# sp1-helios-primitives = { git = "https://github.com/succinctlabs/sp1-helios", branch = "umadayal/helios-0.7.0", default-features = false }
 ark-bn254.workspace = true
 ark-groth16.workspace = true
 ark-std.workspace = true
@@ -33,12 +35,12 @@ trie-db.workspace = true
 rlp.workspace = true
 primitive-types.workspace = true
 ethabi.workspace = true
-helios-common.workspace = true
-helios-consensus-core.workspace = true
-alloy-primitives.workspace = true
-ssz-rs.workspace = true
-serde_cbor = { workspace = true, default-features = true }
-tree_hash.workspace = true
+# helios-common.workspace = true
+# helios-consensus-core.workspace = true
+# alloy-primitives.workspace = true
+# ssz-rs.workspace = true
+# serde_cbor = { workspace = true, default-features = true }
+# tree_hash.workspace = true
 
 [dev-dependencies]
 pallet-balances = { workspace = true, default-features = false, features = ["std"] }
@@ -62,7 +64,7 @@ std = [
 	"pallet-timestamp/std",
 	"rlp/std",
 	"patricia-merkle-trie/std",
-	"alloy-primitives/std",
+	# "alloy-primitives/std",
 	"ark-bn254/std",
 	"ark-ff/std",
 	"ark-groth16/std",
@@ -71,9 +73,10 @@ std = [
 	"log/std",
 	"primitive-types/std",
 	"serde/std",
-	"serde_cbor/std",
+	# "serde_cbor/std",
+	"sp1-verifier/std",
 	"serde_json/std",
-	"ssz-rs/std",
+	# "ssz-rs/std",
 	"trie-db/std"
 ]
 runtime-benchmarks = [

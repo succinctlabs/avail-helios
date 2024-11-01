@@ -58,7 +58,7 @@ decl_runtime_apis! {
 
 	pub trait VectorApi {
 		fn sync_committee_poseidons(slot: u64) -> U256;
-		fn sync_committee_hashes(slot: u64) -> U256;
+		// fn sync_committee_hashes(slot: u64) -> U256;
 		fn head() -> u64;
 		fn headers(slot: u64) -> H256;
 	}
@@ -392,9 +392,9 @@ impl_runtime_apis! {
 			pallet_vector::Pallet::<Runtime>::sync_committee_poseidons(slot)
 		}
 
-		fn sync_committee_hashes(slot: u64) -> U256 {
-			pallet_vector::Pallet::<Runtime>::sync_committee_hashes(slot)
-		}
+		// fn sync_committee_hashes(slot: u64) -> U256 {
+		// 	pallet_vector::Pallet::<Runtime>::sync_committee_hashes(slot)
+		// }
 
 		fn head() -> u64 {
 			pallet_vector::Pallet::<Runtime>::head()
